@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    height: 80vh;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+}
+
+h1 {
+    /* margin: 0px; */
+    margin: 25px;
+    font-size: 34pt;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+p {
+
+    margin: 0px;
+    padding: 0px 25px;
+    max-width: 600px;
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
