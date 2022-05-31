@@ -4,7 +4,8 @@ body {
     justify-content: center;
     font-family: sans-serif;
     flex-direction: column;
-    height: 80vh;
+    /* height: 80vh; */
+    overflow: scroll;
 }
 
 img {
@@ -15,9 +16,11 @@ img {
 
 h1 {
     /* margin: 0px; */
-    margin: 25px;
+    box-sizing: border-box;
+    margin: 25px 0px;
     font-size: 34pt;
-    font-weight: 400;
+    font-weight: 400; 
+    padding: 0px 25px;
     /* text-transform: uppercase; */
     text-align: left;
     max-width: 600px;
@@ -33,5 +36,81 @@ p {
     font-size: 14pt;
     font-weight: 300;
     line-height: 1.6;
+
+}
+
+form {
+
+    margin: 5%;
+    max-width: 500px;
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 5px;
+
+}
+
+label {
+    
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 900;
+
+}
+
+input {
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+input[type="submit"] {
+
+    margin-top: 20px;
+    background: #fff;
+
+}
+
+input[type="submit"]:hover {
+
+    margin-top: 20px;
+    background: #eee;
+    cursor: pointer;
+
+}
+
+i {
+
+    margin-top: 50px;
+    display: block;
+    line-height: 1.6;
+    font-weight: 200;
+
+}
+
+.success {
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 100vh;
+    bottom: 0px;
+    background: #4FC132;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: top 0.2s;
+
+}
+
+.success.active {
+
+    top: 0px;
 
 }

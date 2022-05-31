@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPA Signup</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a href="/">
+      <img src="/full.svg" alt="FPA Logo" />
+    </a>
+    <h1>Signup Before Launch</h1>
+    <p>
+      To signup before the platform is officially launched, enter your details
+      below. Please note that by clicking submit below, you are agreeing to the
+      terms and conditions.
+    </p>
+    <form id="form">
+      <label for="username">Username: ("firstname-lastname")</label>
+      <input id="username" placeholder="jane-doe" type="text" />
+      <label for="email">Email: </label>
+      <input
+        id="email"
+        placeholder="jdoe@fairfieldprogramming.org"
+        type="text"
+      />
+      <label for="password">Password: </label>
+      <input id="password" placeholder="CarrotLang4Eva!" type="password" />
+
+      <i id="messagebox"></i>
+
+      <input type="submit" value="Create Account" />
+    </form>
+    <script src="/signup/script.js"></script>
+    <div class="success" id="success">
+      <h1>Success!</h1>
+      <p>
+        Your account has been created and you should be receiving a confirmation
+        email right about now. We can't wait for launch!
+      </p>
+    </div>
+  </body>
+</html>
